@@ -1,8 +1,5 @@
 # Lektion 10 april
 
-## Presentation
-- [Global statehantering]().
-
 ## Länkar
 - [Officiell dokumentation](https://reactjs.org/).
 - [Node.js Nedladdning](https://nodejs.org/en/download).
@@ -25,7 +22,8 @@ Försök att applicera dagens kod på någon av föregående övningar.
 Ingen föreläsning publicerad ännu...
 
 ## Extraresurser
-
+- [Global Statehantering - Koncept](https://vimeo.com/800436828/77768129bb?share=copy)
+- [Zustand Beginner Tutorial](https://www.youtube.com/watch?v=-Y8brhQKvtA&t=823s)
 
 ## Studerandegrupper
 Ni som är intresserade av att delta i studerandegrupper kan skriva in er i valfri grupp [här](https://docs.google.com/document/d/179YYbPcJSsOzk_GbDWZUCH55reVrCRdyAnLf8lafguY/edit?usp=sharing). Om någon hamnar ensam i en grupp så kommer jag att flytta den personen till en annan grupp som innehåller andra studerande.

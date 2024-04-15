@@ -1,7 +1,7 @@
 import './bookItem.css';
 import { useState } from 'react';
 
-function BookItem({ decreaseCartBalance, increaseCartBalance, book }) {
+function BookItem() {
   const [bookBalance, setBookBalance] = useState(0);
 
   const decreaseBookBalance = () => {
@@ -11,9 +11,10 @@ function BookItem({ decreaseCartBalance, increaseCartBalance, book }) {
     }
   }
 
-  const increaseBookBalance = () => {
+  const increaseBookBalance = (book) => {
     increaseCartBalance();
     setBookBalance(b => b + 1);
+    addToCart(book);
   }
 
   return (
@@ -29,7 +30,7 @@ function BookItem({ decreaseCartBalance, increaseCartBalance, book }) {
         <p className="book-balance">{ bookBalance }</p>
         <button 
           className="book-btn"
-          onClick={ increaseBookBalance }
+          onClick={ () => increaseBookBalance(book) }
         >+</button>
       </div>
     </article>

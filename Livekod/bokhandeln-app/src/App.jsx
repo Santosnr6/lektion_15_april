@@ -1,26 +1,20 @@
 import './App.css'
 import Header from './components/header/Header';
 import ProductList from './components/productList/ProductList';
+import ProductsPage from './pages/productsPage/ProductsPage';
+import CartPage from './pages/cartPage/CartPage';
 import { useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
-  const [cartBalance, setCartBalance] = useState(0);
-
-  const decreaseCartBalance = () => {
-    if(cartBalance > 0) setCartBalance(c => c - 1);
-  }
-
-  const increaseCartBalance = () => {
-    setCartBalance(c => c + 1);
-  }
 
   return (
     <div className="app">
       <Header cartBalance={ cartBalance } />
-      <ProductList 
-        decreaseCartBalance={ decreaseCartBalance }
-        increaseCartBalance={ increaseCartBalance } 
-      />
+      <Routes>
+        <Route path="/" element={ <ProductsPage /> } />
+        <Route path="/cart" element={ <CartPage />} />
+      </Routes>
     </div>
     
   )

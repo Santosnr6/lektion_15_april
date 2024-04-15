@@ -1,9 +1,14 @@
-import React from 'react'
+import './cartPage.css';
 
 function CartPage() {
   return (
     <div className="cart-page">
-        Cart
+        
+        {
+          cart.map(book => {
+            return <p>{ book.title + " : " + book.quantity }</p>
+          })
+        }
     </div>
   )
 }
